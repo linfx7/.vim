@@ -4,13 +4,13 @@ Run `./install.sh` to install Vundle.
 
 # Features
 
-Leader key: ","
+__Leader key: ","__
 
-1. `<F2>`: paste mode
-2. `<F5>`: run code (c/c++ with gcc, python)
-3. `<C-n>`: NERDTreeToggle
-4. `<Leader>b` :bp (previous buffer, :bd to delete buffer)
-5. `<Leader>f` :bn (next buffer, :bd to delete buffer)
-6. `<Leader>gc` :YcmCompleter GoToDeclaration
-7. `<Leader>gf` :YcmCompleter GoToDefinition
-8. `<Leader>gg` :YcmCompleter GoToDefinitionElseDeclaration
+- `<F2>`: paste mode
+- `<F5>`: run code (c/c++ with gcc, python)
+- `<C-n>`: NERDTreeToggle
+- `<Leader>b` :bp (previous buffer, :bd to delete buffer)
+- `<Leader>f` :bn (next buffer, :bd to delete buffer)
+- `<Leader>gc` :YcmCompleter GoToDeclaration
+- `<Leader>gf` :YcmCompleter GoToDefinition
+- `<Leader>gg` :YcmCompleter GoToDefinitionElseDeclaration
