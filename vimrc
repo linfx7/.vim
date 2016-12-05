@@ -1,8 +1,8 @@
 "==========================================
 " Author:  linfx7
-" Version: 0.6
+" Version: 0.7
 " Email: linfx7@gmail.com
-" Last_modify: 2016-09-18
+" Last_modify: 2016-12-05
 " Sections:
 "       -> Pre-Settings
 "       -> Initial Plugin
