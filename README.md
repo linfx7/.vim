@@ -2,7 +2,7 @@
 
 Run `./install.sh` to install Vundle.
 
-# Features
+# Shortcuts
 
 __Leader key: ","__
 
