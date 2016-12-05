@@ -1,0 +1,93 @@
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim/
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+" The following are examples of different formats supported.
+" Keep Plugin commands between vundle#begin/end.
+"==========================================
+
+" vim-colorschemes
+Plugin 'flazz/vim-colorschemes'
+
+" vim-airline
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+let g:airline#extensions#tabline#enabled = 1
+" let g:airline_powerline_fonts=1
+let g:airline_theme='molokai'
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = '|'
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = '|'
+
+" NERD tree
+Plugin 'scrooloose/nerdtree'
+map <C-n> :NERDTreeToggle<CR>
+let NERDTreeWinPos = "right"
+let g:NERDTreeDirArrowExpandable = '>'
+let g:NERDTreeDirArrowCollapsible = 'v'
+
+" Syntax check
+"Plugin 'scrooloose/syntastic'
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 1
+"let g:syntastic_check_on_open = 1
+"let g:syntastic_check_on_wq = 0
+
+" delimitMate automatic closing quotes, parenthesis, brackets, etc.
+Plugin 'Raimondi/delimitMate'
+let delimitMate_expand_cr = 1
+let delimitMate_expand_space = 1
+let delimitMate_jump_expansion = 1
+
+" quick commenting
+Plugin 'scrooloose/nerdcommenter'
+let g:NERDSpaceDelims = 1
+
+" Formatting code
+Plugin 'Chiel92/vim-autoformat'
+
+" YouCompleteMe
+Plugin 'Valloric/YouCompleteMe'
+let g:ycm_confirm_extra_conf=0
+"注释和字符串中的文字也会被收入补全
+let g:ycm_collect_identifiers_from_comments_and_strings = 0
+" 输入第2个字符开始补全
+let g:ycm_min_num_of_chars_for_completion=2
+" 开启语义补全
+let g:ycm_seed_identifiers_with_syntax=1    
+"在注释输入中也能补全
+let g:ycm_complete_in_comments = 1
+"在字符串输入中也能补全
+let g:ycm_complete_in_strings = 1
+"设置跳转的快捷键，可以跳转到definition和declaration  
+nnoremap <leader>gc :YcmCompleter GoToDeclaration<CR>  
+nnoremap <leader>gf :YcmCompleter GoToDefinition<CR>  
+nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>  
+nmap <F4> :YcmDiags<CR>
+
+" YCM-Generator
+Plugin 'rdnetto/YCM-Generator'
+
+" Vim-CtrlSpace
+Plugin 'szw/vim-ctrlspace'
+
+
+"==========================================
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
