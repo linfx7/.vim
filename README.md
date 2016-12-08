@@ -2,6 +2,8 @@
 
 Run `./install.sh` to install Vundle.
 
+Run `./install.py --clang-completer` to compile YouCompleteMe.
+
 # Shortcuts
 
 __Leader key : ","__
