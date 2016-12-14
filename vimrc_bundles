@@ -56,20 +56,24 @@ Plugin 'Chiel92/vim-autoformat'
 " YouCompleteMe
 Plugin 'Valloric/YouCompleteMe'
 let g:ycm_confirm_extra_conf=0
-"注释和字符串中的文字也会被收入补全
-let g:ycm_collect_identifiers_from_comments_and_strings = 0
-" 输入第2个字符开始补全
-let g:ycm_min_num_of_chars_for_completion=2
-" 开启语义补全
-let g:ycm_seed_identifiers_with_syntax=1    
-"在注释输入中也能补全
+" 在注释输入补全
 let g:ycm_complete_in_comments = 1
-"在字符串输入中也能补全
+" 在字符串输入补全
 let g:ycm_complete_in_strings = 1
-"设置跳转的快捷键，可以跳转到definition和declaration
-nnoremap <Leader>gc :YcmCompleter GoToDeclaration<CR>
-nnoremap <Leader>gf :YcmCompleter GoToDefinition<CR>
-nnoremap <Leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
+" 注释和字符串中的文字也会被收入补全
+let g:ycm_collect_identifiers_from_comments_and_strings = 1
+" 开启标签补全引擎
+let g:ycm_collect_identifiers_from_tags_files=1
+" 开启语义补全
+let g:ycm_seed_identifiers_with_syntax=1
+" 输入第1个字符开始补全
+let g:ycm_min_num_of_chars_for_completion=1
+" 补全内容不以分割子窗口形式出现，只显示补全列表
+set completeopt-=preview
+" 从第一个键入字符就开始罗列匹配项
+let g:ycm_min_num_of_chars_for_completion=1
+" 禁止缓存匹配项，每次都重新生成匹配项
+let g:ycm_cache_omnifunc=0
 
 " YCM-Generator
 Plugin 'rdnetto/YCM-Generator'

@@ -79,7 +79,7 @@ endif
 if has("gui_running")
     set lines=45
     set columns=120
-	  winpos 350 100
+	winpos 350 100
 endif
 
 " 保存历史记录
@@ -104,7 +104,7 @@ set nobackup
 setlocal noswapfile
 
 " 突出显示当前行
-set cursorcolumn
+"set cursorcolumn
 set cursorline
 
 " 在上下移动光标时，光标的上方或下方至少会保留显示的行数
