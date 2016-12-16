@@ -24,7 +24,7 @@
 set nocompatible
 
 " 256色
-" set t_Co=256
+set t_Co=256
 
 " 允许在有未保存的修改时切换缓冲区，此时的修改由 vim 负责保存  
 set hidden
@@ -131,10 +131,10 @@ set shiftround    " 缩进时，取整
 set expandtab     " 替换Tab为空格
 
 " mintty中，在普通模式下和插入模式下使用不同光标
-"let &t_ti.="\e[1 q"
-"let &t_SI.="\e[5 q"
-"let &t_EI.="\e[1 q"
-"let &t_te.="\e[0 q"
+" let &t_ti.="\e[1 q"
+" let &t_SI.="\e[5 q"
+" let &t_EI.="\e[1 q"
+" let &t_te.="\e[0 q"
 
 " 取消自动注释
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
